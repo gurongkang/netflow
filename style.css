@@ -1,0 +1,358 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navigation */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a365d;
+}
+
+.logo span {
+    color: #3182ce;
+}
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+.nav-links a {
+    font-weight: 500;
+    color: #4a5568;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #3182ce;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1a365d 0%, #2c5282 50%, #3182ce 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+    top: -200px;
+    right: -200px;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 50%;
+    bottom: -100px;
+    left: -100px;
+}
+
+.hero-content {
+    max-width: 800px;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 20px;
+    opacity: 0.9;
+    margin-bottom: 40px;
+}
+
+.cta-button {
+    display: inline-block;
+    background: white;
+    color: #1a365d;
+    padding: 15px 40px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 16px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Products Section */
+.products {
+    padding: 100px 50px;
+    background: #f7fafc;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 42px;
+    color: #1a365d;
+    margin-bottom: 20px;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #718096;
+    font-size: 18px;
+    margin-bottom: 60px;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-card {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 16px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.product-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #3182ce, #63b3ed);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-size: 36px;
+}
+
+.product-card h3 {
+    font-size: 22px;
+    color: #1a365d;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    color: #718096;
+    font-size: 14px;
+}
+
+/* Stats Section */
+.stats {
+    padding: 80px 50px;
+    background: linear-gradient(135deg, #1a365d, #2c5282);
+    color: white;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.stat-item h2 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.stat-item p {
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+/* About Section */
+.about {
+    padding: 100px 50px;
+    background: white;
+}
+
+.about-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-content p {
+    font-size: 18px;
+    color: #4a5568;
+    margin-bottom: 30px;
+    line-height: 1.8;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.value-item {
+    padding: 30px;
+    background: #f7fafc;
+    border-radius: 12px;
+}
+
+.value-item h3 {
+    color: #3182ce;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.value-item p {
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
+/* Contact Section */
+.contact {
+    padding: 100px 50px;
+    background: #f7fafc;
+}
+
+.contact-content {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-info {
+    margin-top: 40px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #4a5568;
+}
+
+.contact-item span:first-child {
+    font-size: 24px;
+}
+
+/* Footer */
+.footer {
+    background: #1a365d;
+    color: white;
+    padding: 40px 50px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.7);
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+.copyright {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .nav-links {
+        gap: 20px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .section-title {
+        font-size: 32px;
+    }
+
+    .products, .about, .contact {
+        padding: 60px 20px;
+    }
+
+    .stat-item h2 {
+        font-size: 36px;
+    }
+}
