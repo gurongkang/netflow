@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
 
 :root {
     --ink-900: #0f172a;
@@ -21,8 +21,8 @@
 }
 
 body {
-    font-family: 'Source Sans 3', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
+    font-family: 'Manrope', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7;
     color: var(--ink-700);
     background: radial-gradient(circle at top left, #e0f2fe 0%, transparent 45%),
         radial-gradient(circle at 80% 20%, #ffedd5 0%, transparent 40%),
@@ -36,9 +36,9 @@ a {
 }
 
 h1, h2, h3, .logo {
-    font-family: 'Space Grotesk', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Manrope', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--ink-900);
-    letter-spacing: -0.02em;
+    letter-spacing: -0.01em;
 }
 
 /* Navigation */
@@ -129,33 +129,47 @@ h1, h2, h3, .logo {
 }
 
 .hero h1 {
-    font-size: 56px;
+    font-size: 72px;
     font-weight: 700;
     margin-bottom: 20px;
-    line-height: 1.2;
+    line-height: 1.18;
+    padding-bottom: 0.08em;
+    color: var(--ink-900);
+}
+
+@supports (-webkit-background-clip: text) or (background-clip: text) {
+    .hero h1 {
+        background: linear-gradient(120deg, #0f766e 0%, #0284c7 55%, #14b8a6 100%);
+        background-size: 200% 200%;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        filter: drop-shadow(0 10px 24px rgba(15, 23, 42, 0.18));
+        animation: text-shimmer 8s ease-in-out infinite;
+    }
 }
 
 .hero p {
-    font-size: 20px;
+    font-size: 22px;
     color: var(--ink-700);
     margin-bottom: 40px;
 }
 
 .cta-button {
     display: inline-block;
-    background: linear-gradient(135deg, var(--primary), var(--primary-soft));
+    background: linear-gradient(135deg, #0f766e 0%, #0284c7 100%);
     color: white;
-    padding: 15px 44px;
+    padding: 18px 52px;
     border-radius: 50px;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 18px;
     transition: transform 0.3s, box-shadow 0.3s;
-    box-shadow: 0 14px 30px rgba(15, 118, 110, 0.3);
+    box-shadow: 0 16px 34px rgba(2, 132, 199, 0.28);
 }
 
 .cta-button:hover {
     transform: translateY(-3px);
-    box-shadow: 0 18px 36px rgba(15, 118, 110, 0.35);
+    box-shadow: 0 22px 40px rgba(2, 132, 199, 0.32);
 }
 
 /* Products Section */
@@ -497,6 +511,18 @@ h1, h2, h3, .logo {
     }
 }
 
+@keyframes text-shimmer {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .navbar {
@@ -508,11 +534,12 @@ h1, h2, h3, .logo {
     }
 
     .hero h1 {
-        font-size: 36px;
+        font-size: 48px;
+        line-height: 1.2;
     }
 
     .hero p {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .section-title {
