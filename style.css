@@ -384,6 +384,11 @@ h1, h2, h3, .logo {
     line-height: 1.8;
 }
 
+.about-content .highlight {
+    color: var(--primary);
+    font-weight: 700;
+}
+
 .values-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -446,6 +451,11 @@ h1, h2, h3, .logo {
     color: var(--accent);
 }
 
+.contact-item .highlight {
+    color: var(--primary);
+    font-weight: 700;
+}
+
 /* Footer */
 .footer {
     background: #0f172a;
@@ -478,6 +488,11 @@ h1, h2, h3, .logo {
 .copyright {
     color: rgba(255, 255, 255, 0.5);
     font-size: 14px;
+}
+
+.copyright .highlight {
+    color: var(--primary-soft);
+    font-weight: 700;
 }
 
 @keyframes float {
@@ -523,6 +538,85 @@ h1, h2, h3, .logo {
     }
 }
 
+/* Policy Content */
+.policy-content {
+    padding: 120px 50px 80px;
+    background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+    min-height: 100vh;
+}
+
+.policy-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.policy-text {
+    margin-top: 40px;
+    line-height: 1.8;
+}
+
+.policy-text p {
+    margin-bottom: 20px;
+    color: var(--ink-700);
+    font-size: 16px;
+}
+
+.policy-text h2 {
+    font-size: 28px;
+    color: var(--ink-900);
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--primary);
+}
+
+.policy-text h3 {
+    font-size: 22px;
+    color: var(--ink-900);
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.policy-text h4 {
+    font-size: 18px;
+    color: var(--ink-900);
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.policy-text ul,
+.policy-text ol {
+    margin-bottom: 20px;
+    padding-left: 30px;
+    color: var(--ink-700);
+}
+
+.policy-text li {
+    margin-bottom: 10px;
+    line-height: 1.7;
+}
+
+.policy-text a {
+    color: var(--primary);
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+.policy-text a:hover {
+    color: var(--primary-soft);
+}
+
+.policy-text strong {
+    color: var(--ink-900);
+    font-weight: 600;
+}
+
+.policy-text .highlight {
+    color: var(--primary);
+    font-weight: 700;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .navbar {
@@ -552,5 +646,17 @@ h1, h2, h3, .logo {
 
     .stat-item h2 {
         font-size: 36px;
+    }
+
+    .policy-content {
+        padding: 100px 20px 60px;
+    }
+
+    .policy-text h2 {
+        font-size: 24px;
+    }
+
+    .policy-text h3 {
+        font-size: 20px;
     }
 }
