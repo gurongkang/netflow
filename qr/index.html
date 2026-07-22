@@ -310,6 +310,14 @@
       flex-shrink: 0;
       font-size: 24px;
       line-height: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .privacy-card .picon img {
+      width: 24px;
+      height: 24px;
+      object-fit: contain;
     }
     .privacy-card h4 { font-size: 15px; font-weight: 700; margin-bottom: 4px; }
     .privacy-card p { font-size: 14px; color: var(--muted); }
@@ -320,6 +328,7 @@
       text-align: center;
     }
     .download-icon { font-size: 56px; margin-bottom: 20px; }
+    .download-icon img { width: 64px; height: 64px; object-fit: contain; }
     .google-play-btn {
       display: inline-flex;
       align-items: center;
@@ -547,7 +556,7 @@
         <h3 style="font-size:18px; font-weight:700; margin-bottom:20px;">Supported Code Types</h3>
         <div style="display:flex; flex-direction:column; gap:12px;">
           <div style="display:flex; align-items:center; gap:14px; padding:14px 16px; background:white; border-radius:10px; border:1px solid var(--border);">
-            <span style="font-size:22px;">📱</span>
+            <img src="icons/ic_launcher.webp" alt="" style="width:22px; height:22px; object-fit:contain;">
             <div><div style="font-weight:600; font-size:15px;">QR Codes</div><div style="font-size:13px; color:var(--muted);">Standard QR & variant formats</div></div>
           </div>
           <div style="display:flex; align-items:center; gap:14px; padding:14px 16px; background:white; border-radius:10px; border:1px solid var(--border);">
@@ -609,7 +618,7 @@
         </div>
       </div>
       <div class="privacy-card">
-        <div class="picon">📱</div>
+        <div class="picon"><img src="icons/ic_launcher.webp" alt=""></div>
         <div>
           <h4>Storage</h4>
           <p>Used to save scan history and app preferences. All data remains on your device.</p>
@@ -639,7 +648,7 @@
 <!-- ── Download CTA ── -->
 <section id="download">
   <div class="container" style="text-align:center;">
-    <div class="download-icon">📱</div>
+    <div class="download-icon"><img src="icons/ic_launcher.webp" alt="QR & Barcode Scanner"></div>
     <div class="section-label" style="text-align:center;">Download</div>
     <h2 class="section-title" style="margin:0 auto 14px;">Start Scanning Codes Today</h2>
     <p class="section-desc" style="margin:0 auto 8px;">Free to download. No account required. Works on Android 5.0 and above.</p>
