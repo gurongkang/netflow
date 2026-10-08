@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Privacy Policy – FindPhonebyClapHome</title>
+<title>Privacy Policy – Find My Phone by Clap Home</title>
+<link rel="icon" type="image/png" href="/find/icons/ic_launcher-playstore.png">
 <style>
   body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 15px; line-height: 1.7; color: #333; max-width: 800px; margin: 0 auto; padding: 24px 16px; }
   h1 { font-size: 22px; color: #111; margin-bottom: 4px; }
@@ -11,26 +12,40 @@
   p, li { color: #444; }
   ul { padding-left: 20px; }
   .last-updated { font-size: 13px; color: #888; margin-bottom: 24px; }
-  a { color: #1a73e8; }
+  a { color: #1a73e8; overflow-wrap: anywhere; }
+  code { overflow-wrap: anywhere; }
+  .legal-brand { display: flex; align-items: center; gap: 12px; padding-bottom: 20px; border-bottom: 1px solid #e5e7eb; margin-bottom: 24px; }
+  .legal-brand img { flex-shrink: 0; border-radius: 22%; }
+  .legal-brand a { font-size: 17px; font-weight: 700; text-decoration: none; color: #111; }
+  .legal-nav { display: flex; gap: 20px; flex-wrap: wrap; font-size: 14px; }
+  footer { margin-top: 36px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
 </style>
 </head>
 <body>
 
-<h1>Privacy Policy</h1>
-<p class="last-updated">Last updated: May 24, 2025</p>
+<header class="legal-brand"><img src="/find/icons/ic_launcher-playstore.png" alt="" width="48" height="48"><a href="/find/">Find My Phone by Clap Home</a></header>
+<nav class="legal-nav" aria-label="Legal pages"><a href="/find/">App Home</a><a href="/find/terms_of_service.html">Terms of Service</a></nav>
 
-<p>FindPhonebyClapHome ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application <strong>FindPhonebyClapHome</strong> (the "App"). Please read this policy carefully. If you disagree with its terms, please discontinue use of the App.</p>
+<h1>Privacy Policy</h1>
+<p class="last-updated">Last updated: October 8, 2026</p>
+
+<p>Find My Phone by Clap Home ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application <strong>Find My Phone by Clap Home</strong> (the "App"). Please read this policy carefully. If you disagree with its terms, please discontinue use of the App.</p>
+
+<p>This document applies to the Android App with package identifier <code>com.netflowlife.clap.find.phonehome</code>.</p>
 
 <h2>1. Information We Collect</h2>
 <p>We may collect the following types of information:</p>
 <ul>
   <li><strong>Device Information:</strong> Device model, operating system version, unique device identifiers, and advertising ID.</li>
-  <li><strong>Usage Data:</strong> App features used, session duration, crash logs, and diagnostic data.</li>
-  <li><strong>Microphone Access:</strong> The App uses your device microphone solely to detect clap sounds for phone-finding functionality. Audio is processed locally on your device and is never recorded, stored, or transmitted.</li>
-  <li><strong>IP Address:</strong> Collected automatically when you use the App; anonymized as soon as technically feasible.</li>
+  <li><strong>Usage Data:</strong> App features used, detection and alert events (such as a clap or whistle being detected, without the associated audio), settings changes, session activity, crash logs, and diagnostic data.</li>
+  <li><strong>Microphone Access:</strong> When you enable detection and grant microphone permission, the App captures short audio buffers in memory to recognize claps and whistles locally on your device. These buffers are not saved as audio recordings or uploaded for sound recognition. Listening depends on detection settings, screen state, sleep mode, and test mode; it is not limited to when the screen is off. You can stop listening by turning detection off or revoking microphone permission.</li>
+  <li><strong>IP Address:</strong> Network services, including advertising, analytics, and attribution providers, may receive your IP address when the App connects to them. This may be used for network delivery, approximate region, measurement, and fraud prevention.</li>
   <li><strong>Advertising ID:</strong> A unique, resettable identifier used for ad personalization. You may reset or opt out of personalization in your device settings.</li>
-  <li><strong>Search Queries:</strong> Queries entered through any in-app search feature.</li>
+  <li><strong>Search Queries:</strong> Queries entered through the launcher search feature may be sent to the search provider you choose when you perform a web search. That provider processes the query under its own privacy policy.</li>
+  <li><strong>Local Launcher and Feature Data:</strong> The App accesses installed-app information to display and launch apps, and stores home-screen layout, widget configuration, detection preferences, and setup choices on your device.</li>
+  <li><strong>Optional Alerts:</strong> Device motion and charger-connection events are used for anti-theft alerts when enabled. Camera access is used for the optional flashlight alert, without taking photos or videos. Notifications show service status and alerts.</li>
 </ul>
+<p><strong>Home-app choice:</strong> Android manages your default home app. You can choose this App or keep another launcher, including Pixel Launcher. After setup, phone-finding tools remain accessible inside the App. A home-app reminder may appear when you leave the phone-finding screen. You can change your default home app in Android settings.</p>
 
 <h2>2. How We Use Your Information</h2>
 <ul>
@@ -38,7 +53,7 @@
   <li>To improve, personalize, and expand our App.</li>
   <li>To understand and analyze how you use the App.</li>
   <li>To develop new products, services, and features.</li>
-  <li>To display relevant advertisements.</li>
+  <li>To display advertisements and measure advertising interactions and installation attribution.</li>
   <li>To detect and prevent fraud and comply with legal obligations.</li>
   <li>To communicate important notices about the App.</li>
 </ul>
@@ -51,8 +66,13 @@
 <ul>
   <li><strong>Google AdMob</strong> – advertising: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
   <li><strong>Google Analytics for Firebase</strong> – analytics: <a href="https://firebase.google.com/policies/analytics">https://firebase.google.com/policies/analytics</a></li>
-  <li><strong>Firebase Crashlytics</strong> – crash reporting: <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></li>
+  <li><strong>Firebase Crashlytics and Remote Config</strong> – crash reporting and feature configuration: <a href="https://firebase.google.com/support/privacy">Firebase privacy information</a></li>
+  <li><strong>Adjust</strong> – installation attribution and measurement: <a href="https://www.adjust.com/terms/privacy-policy/">Adjust Privacy Policy</a></li>
+  <li><strong>AppsFlyer</strong> – installation attribution and marketing measurement: <a href="https://www.appsflyer.com/legal/services-privacy-policy/">AppsFlyer Services Privacy Policy</a></li>
+  <li><strong>Advertising mediation and partner networks:</strong> Depending on the App version, configuration, and region, advertising may be supplied through AdMob, AppLovin, TradPlus, Bigo, Mintegral, Pangle, Meta Audience Network, Liftoff/Vungle, Unity, Verve, or BidMachine. These providers may process device identifiers, network information, and ad-interaction data. See also the <a href="https://docs.tradplusad.com/en/privacy-policy/">TradPlus Privacy Policy</a>.</li>
 </ul>
+
+<p>Third-party data collection is separate from local audio recognition: no clap or whistle audio recordings are provided to these services by the phone-finding feature. Data collection depends on which services are active and applicable privacy choices.</p>
 
 <h2>5. Data Sharing and Disclosure</h2>
 <p>We do not sell your personal information. We may share data with:</p>
@@ -63,7 +83,7 @@
 </ul>
 
 <h2>6. Data Retention</h2>
-<p>We retain your data only as long as necessary to fulfill the purposes described in this policy or as required by law. Aggregated, anonymized data may be retained indefinitely.</p>
+<p>Local settings and launcher data remain on your device until cleared or removed, subject to Android backup and restore settings. Audio buffers are temporary and are not saved as recordings. Service providers retain analytics, advertising, attribution, and diagnostic data according to their policies. We retain information you send to us only as long as necessary for the purposes described in this policy or as required by law.</p>
 
 <h2>7. Data Security</h2>
 <p>We implement industry-standard technical and organizational measures, including SSL/TLS encryption in transit, to protect your information. However, no method of transmission over the Internet is 100% secure.</p>
@@ -91,8 +111,9 @@
 <h2>12. Contact Us</h2>
 <p>If you have questions or requests regarding this Privacy Policy, please contact us at:</p>
 <p>
-  <strong>Email:</strong> gurk2011@sohu.com<br>
+  <strong>Email:</strong> <a href="mailto:gurk2011@sohu.com">gurk2011@sohu.com</a><br>
 </p>
 
+<footer><nav class="legal-nav" aria-label="Footer links"><a href="/find/">App Home</a><a href="/find/terms_of_service.html">Terms of Service</a></nav><p>© 2026 Find My Phone by Clap Home. All rights reserved.</p></footer>
 </body>
 </html>

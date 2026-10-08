@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Terms of Service – FindPhonebyClapHome</title>
+<title>Terms of Service – Find My Phone by Clap Home</title>
+<link rel="icon" type="image/png" href="/find/icons/ic_launcher-playstore.png">
 <style>
   body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 15px; line-height: 1.7; color: #333; max-width: 800px; margin: 0 auto; padding: 24px 16px; }
   h1 { font-size: 22px; color: #111; margin-bottom: 4px; }
@@ -11,21 +12,35 @@
   p, li { color: #444; }
   ul { padding-left: 20px; }
   .last-updated { font-size: 13px; color: #888; margin-bottom: 24px; }
-  a { color: #1a73e8; }
+  a { color: #1a73e8; overflow-wrap: anywhere; }
+  code { overflow-wrap: anywhere; }
+  .legal-brand { display: flex; align-items: center; gap: 12px; padding-bottom: 20px; border-bottom: 1px solid #e5e7eb; margin-bottom: 24px; }
+  .legal-brand img { flex-shrink: 0; border-radius: 22%; }
+  .legal-brand a { font-size: 17px; font-weight: 700; text-decoration: none; color: #111; }
+  .legal-nav { display: flex; gap: 20px; flex-wrap: wrap; font-size: 14px; }
+  footer { margin-top: 36px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
 </style>
 </head>
 <body>
 
-<h1>Terms of Service</h1>
-<p class="last-updated">Last updated: May 24, 2025</p>
+<header class="legal-brand"><img src="/find/icons/ic_launcher-playstore.png" alt="" width="48" height="48"><a href="/find/">Find My Phone by Clap Home</a></header>
+<nav class="legal-nav" aria-label="Legal pages"><a href="/find/">App Home</a><a href="/find/privacy_policy.html">Privacy Policy</a></nav>
 
-<p>Please read these Terms of Service ("Terms") carefully before using the <strong>FindPhonebyClapHome</strong> mobile application (the "App"). By downloading, installing, or using the App, you agree to be bound by these Terms. If you do not agree, do not use the App.</p>
+<h1>Terms of Service</h1>
+<p class="last-updated">Last updated: October 8, 2026</p>
+
+<p>Please read these Terms of Service ("Terms") carefully before using the <strong>Find My Phone by Clap Home</strong> mobile application (the "App"). By downloading, installing, or using the App, you agree to be bound by these Terms. If you do not agree, do not use the App.</p>
+
+<p>This document applies to the Android App with package identifier <code>com.netflowlife.clap.find.phonehome</code>.</p>
 
 <h2>1. Acceptance of Terms</h2>
-<p>By accessing or using FindPhonebyClapHome, you confirm that you are at least 13 years of age, have read and understood these Terms, and agree to comply with them. If you are using the App on behalf of an organization, you represent that you have authority to bind that organization to these Terms.</p>
+<p>By accessing or using Find My Phone by Clap Home, you confirm that you are at least 13 years of age, have read and understood these Terms, and agree to comply with them. If you are using the App on behalf of an organization, you represent that you have authority to bind that organization to these Terms.</p>
 
 <h2>2. Description of the App</h2>
-<p>FindPhonebyClapHome is a launcher application that allows users to locate their Android device by clapping their hands. The App also provides home screen, quick-toggle widget, and related launcher functionality. Features and availability may vary by device and region.</p>
+<p>Find My Phone by Clap Home is an Android application that helps users locate their device by clapping or whistling while detection is enabled. It also provides a home screen, app drawer, quick-toggle widget, configurable sound, vibration and flashlight alerts, and optional motion or charger-disconnection anti-theft alerts. Features and availability may vary by device, configuration, and region.</p>
+
+<p>You can set the App as your default home app or keep your existing launcher, including Pixel Launcher. After completing setup, you can access phone-finding tools inside the App. If you skip the home-app reminder, swipe right from the App's home screen to reach those tools. The App may show a default-home-app reminder when you leave the phone-finding screen. Android controls the final default-home selection, which you can change at any time in system settings.</p>
+<p>Detection depends on microphone permission, service availability, sensitivity, distance, background noise, and device power-management settings. Test your chosen alerts before relying on them. Phone-finding and anti-theft alerts are convenience features and do not guarantee recovery of a lost or stolen device.</p>
 
 <h2>3. License Grant</h2>
 <p>We grant you a limited, non-exclusive, non-transferable, revocable license to install and use the App on your personal Android device solely for your own personal, non-commercial purposes, subject to these Terms.</p>
@@ -44,9 +59,11 @@
 <h2>5. Permissions and Device Access</h2>
 <p>The App requires certain device permissions to function properly, including but not limited to:</p>
 <ul>
-  <li><strong>Microphone:</strong> To detect clap sounds for phone-finding functionality. Audio is processed locally and never stored or transmitted.</li>
-  <li><strong>Notifications:</strong> To deliver alerts when the clap-detection feature is active.</li>
-  <li><strong>Set as Default Launcher:</strong> To function as your device's home screen.</li>
+  <li><strong>Microphone:</strong> To recognize claps and whistles using temporary audio buffers processed locally. Audio recordings are not saved or uploaded for recognition. Listening can operate with the screen on or off depending on settings and test mode; turning detection off stops listening.</li>
+  <li><strong>Notifications:</strong> To show ongoing detection or anti-theft service status and deliver alerts. Detection may be unavailable if required notification permission is denied.</li>
+  <li><strong>Camera / Flashlight:</strong> To operate the optional flashing-light alert, without capturing photos or videos.</li>
+  <li><strong>Device Sensors and Charger State:</strong> To trigger optional motion and charger-disconnection alarms when enabled.</li>
+  <li><strong>Default Home App:</strong> Optional for making the App your device's home screen. You can keep another launcher and still access the phone-finding tools inside the App.</li>
 </ul>
 <p>You may revoke permissions at any time in your device settings, which may limit App functionality.</p>
 
@@ -84,13 +101,14 @@
 <p>If any provision of these Terms is found to be unenforceable or invalid, that provision shall be limited or eliminated to the minimum extent necessary, and the remaining provisions shall remain in full force and effect.</p>
 
 <h2>17. Entire Agreement</h2>
-<p>These Terms, together with our Privacy Policy, constitute the entire agreement between you and us regarding your use of the App and supersede all prior agreements relating to the same subject matter.</p>
+<p>These Terms, together with our <a href="/find/privacy_policy.html">Privacy Policy</a>, constitute the entire agreement between you and us regarding your use of the App and supersede all prior agreements relating to the same subject matter.</p>
 
 <h2>18. Contact Us</h2>
 <p>If you have any questions about these Terms, please contact us at:</p>
 <p>
-  <strong>Email:</strong> gurk2011@sohu.com<br>
+  <strong>Email:</strong> <a href="mailto:gurk2011@sohu.com">gurk2011@sohu.com</a><br>
 </p>
 
+<footer><nav class="legal-nav" aria-label="Footer links"><a href="/find/">App Home</a><a href="/find/privacy_policy.html">Privacy Policy</a></nav><p>© 2026 Find My Phone by Clap Home. All rights reserved.</p></footer>
 </body>
 </html>
